@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70AED6A4-89CA-4377-909C-0AFA6FD5E6BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AIS</RootNamespace>
+    <AssemblyName>AIS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hnet.com-image.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.21\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_auto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_auto.Designer.cs">
+      <DependentUpon>add_auto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_auto_supply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_auto_supply.Designer.cs">
+      <DependentUpon>add_auto_supply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Supply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Supply.Designer.cs">
+      <DependentUpon>Add_Supply.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_menu.Designer.cs">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="authorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="authorization.Designer.cs">
+      <DependentUpon>authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="auto_client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="auto_client.Designer.cs">
+      <DependentUpon>auto_client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="auto_manager_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="auto_manager_admin.Designer.cs">
+      <DependentUpon>auto_manager_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checkout.Designer.cs">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clients.Designer.cs">
+      <DependentUpon>clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client_buys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client_buys.Designer.cs">
+      <DependentUpon>client_buys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client_menu.Designer.cs">
+      <DependentUpon>Client_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_menu.Designer.cs">
+      <DependentUpon>Manager_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="new_client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="new_client.Designer.cs">
+      <DependentUpon>new_client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="new_provider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="new_provider.Designer.cs">
+      <DependentUpon>new_provider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="providers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="providers.Designer.cs">
+      <DependentUpon>providers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reg.Designer.cs">
+      <DependentUpon>reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reg_new_worker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reg_new_worker.Designer.cs">
+      <DependentUpon>Reg_new_worker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="selling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selling.Designer.cs">
+      <DependentUpon>selling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Supplies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplies.Designer.cs">
+      <DependentUpon>Supplies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="workers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="workers.Designer.cs">
+      <DependentUpon>workers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_auto.resx">
+      <DependentUpon>add_auto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_auto_supply.resx">
+      <DependentUpon>add_auto_supply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Supply.resx">
+      <DependentUpon>Add_Supply.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_menu.resx">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="authorization.resx">
+      <DependentUpon>authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="auto_client.resx">
+      <DependentUpon>auto_client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="auto_manager_admin.resx">
+      <DependentUpon>auto_manager_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checkout.resx">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clients.resx">
+      <DependentUpon>clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client_buys.resx">
+      <DependentUpon>client_buys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client_menu.resx">
+      <DependentUpon>Client_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_menu.resx">
+      <DependentUpon>Manager_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new_client.resx">
+      <DependentUpon>new_client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new_provider.resx">
+      <DependentUpon>new_provider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="providers.resx">
+      <DependentUpon>providers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reg.resx">
+      <DependentUpon>reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reg_new_worker.resx">
+      <DependentUpon>Reg_new_worker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selling.resx">
+      <DependentUpon>selling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplies.resx">
+      <DependentUpon>Supplies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="workers.resx">
+      <DependentUpon>workers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hnet.com-image.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
